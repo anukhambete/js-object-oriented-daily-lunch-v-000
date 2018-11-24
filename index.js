@@ -90,7 +90,11 @@ class Meal{
   }
 
   byPrice(){
-    
+    return store.deliveries.filter(
+      function(delivery){
+        return delivery.mealId === this.id;
+      }.bind(this)
+    );
   }
 
 }
