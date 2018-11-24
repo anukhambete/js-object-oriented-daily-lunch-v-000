@@ -37,6 +37,8 @@ class Customer{
     this.neighborhoodId = neighborhoodId;
     store.customers.push(this);
   }
+
+  
 }
 
 class Meal{
