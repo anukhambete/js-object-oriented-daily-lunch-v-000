@@ -65,12 +65,12 @@ class Delivery{
     );
   }
 
-  meal(){
+  customer(){
     return store.meals.find(
-      function(meal){
-        return meal.id === this.mealId;
+      function(customer){
+        return customer.id === this.customerId;
       }.bind(this)
     );
   }
-  
+
 }
