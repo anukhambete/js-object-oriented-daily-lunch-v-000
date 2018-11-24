@@ -76,6 +76,20 @@ class Meal{
     );
   }
 
+  customers(){
+  let array = this.deliveries();
+  let cust_ids = [...new Set(array)];
+  let new_array = [];
+  let i;
+      for(i=0;i<cust_ids.length;i++) {
+        let x = store.customers.find(a => a.id === cust_ids[i]);
+        new_array.push(x);
+      }
+  return new_array;
+
+  }
+
+
 }
 
 class Delivery{
