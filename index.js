@@ -93,7 +93,7 @@ class Meal{
     let array = store.meals.sort(function(a,b){
       return b.price - a.price;
       });
-    return array;
+    return array
   }
 
 }
