@@ -47,7 +47,15 @@ class Customer{
   }
 
   meals(){
-    
+    let array = this.deliveries();
+    let meal_ids = array.map(x => x.mealId);
+    let new_array = [];
+    let i;
+        for(i=0;i<meal_ids.length;i++) {
+          let x = store.meals.find(a => a.id === meal_ids[i]);
+          new_array.push(x);
+        }
+    return new_array;
   }
 
 }
