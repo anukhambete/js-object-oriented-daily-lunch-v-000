@@ -19,7 +19,15 @@ class Neighborhood{
       }.bind(this)
     );
   }
-  
+
+  customers(){
+    return store.customers.filter(
+      function(customer){
+        return delivery.neighborhoodId === this.id;
+      }.bind(this)
+    );
+  }
+
 }
 
 class Customer{
