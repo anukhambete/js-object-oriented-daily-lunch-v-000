@@ -19,6 +19,7 @@ class Neighborhood{
       }.bind(this)
     );
   }
+  
 }
 
 class Customer{
