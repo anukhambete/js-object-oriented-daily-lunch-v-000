@@ -5,5 +5,6 @@ class Neighborhood{
   constructor(name){
     this.id = ++neighborhoodId;
     this.name = name;
+    store.neighborhoodss.push(this);
   }
 }
