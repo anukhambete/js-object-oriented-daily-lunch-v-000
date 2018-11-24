@@ -30,8 +30,8 @@ class Neighborhood{
 
 
   meals(){
-    array = this.deliveries().map(x => x.mealId);
-    meal_ids = [...new Set(array)];
+    let array = this.deliveries().map(x => x.mealId);
+    let meal_ids = [...new Set(array)];
     let new_array = [];
     let i;
         for(i=0;i<meal_ids.length;i++) {
