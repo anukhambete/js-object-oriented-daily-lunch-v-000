@@ -85,7 +85,7 @@ class Meal{
         let x = store.customers.find(a => a.id === cust_ids[i]);
         new_array.push(x);
       }
-  
+  return new_array;
 
   }
 
