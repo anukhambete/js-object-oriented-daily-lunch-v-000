@@ -77,7 +77,7 @@ class Meal{
   }
 
   customers(){
-  let array = this.deliveries();
+  let array = this.deliveries().map(x => x.customerId);
   let cust_ids = [...new Set(array)];
   let new_array = [];
   let i;
