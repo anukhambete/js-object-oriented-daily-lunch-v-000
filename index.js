@@ -58,6 +58,16 @@ class Customer{
     return new_array;
   }
 
+  totalSpent(){
+    let array = this.meals();
+    return array.reduce(function(acc,cv,ci,arr){
+            return acc + cv.price;
+            }, 0);
+  }
+
+
+
+
 }
 
 class Meal{
@@ -93,7 +103,7 @@ class Meal{
     let array = store.meals.sort(function(a,b){
       return b.price - a.price;
       });
-    return array
+    return array;
   }
 
 }
