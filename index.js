@@ -90,7 +90,10 @@ class Meal{
   }
 
   byPrice(){
-    
+    let array = store.meals.sort(function(a,b){
+      return a.price - b.price;
+      });
+    return array;  
   }
 
 }
