@@ -89,11 +89,11 @@ class Meal{
 
   }
 
-  byPrice(){
+  static byPrice(){
     let array = store.meals.sort(function(a,b){
       return a.price - b.price;
       });
-    return array;  
+    return array;
   }
 
 }
