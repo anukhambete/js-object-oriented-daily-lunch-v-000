@@ -56,4 +56,9 @@ class Delivery{
     this.customerId = customerId;
     store.deliveries.push(this);
   }
+
+  meal(){
+
+  }
+  
 }
